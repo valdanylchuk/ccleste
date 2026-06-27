@@ -22,7 +22,7 @@ xtensa-esp32s3-elf-gcc \
 
 echo "Stripping..."
 xtensa-esp32s3-elf-strip --strip-all --remove-section=.xt.prop \
-  -o celeste-stripped.elf celeste.elf
+  -o celeste.xtensa.elf celeste.elf
 
 echo "Potential required exports:"
 xtensa-esp32s3-elf-nm -u celeste.elf

@@ -28,7 +28,7 @@ echo "Building celeste.elf..."
   -o celeste.elf
 
 echo "Stripping..."
-"$STRIP" --strip-all -o celeste-stripped.elf celeste.elf
+"$STRIP" --strip-all -o celeste.rv32.elf celeste.elf
 
 echo "Potential required exports:"
 "$NM" -u celeste.elf
